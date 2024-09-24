@@ -5,5 +5,8 @@ index = 0
 while index < len(numbers):
     if numbers[index] < 0:
         break
+    if numbers[index] == 0:
+        index += 1
+        continue
     print(numbers[index])
     index += 1
